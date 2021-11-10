@@ -12,13 +12,15 @@ pytorch == 1.9.0
 CUDA == 11.2
 ```
 #### Pretrained Vision Transformer Models
-To start with, you can first download a pre-trained model from:
+To start with, you can first download pre-trained models from:
 
 [ViT-B_16/224 cifar-10](https://pan.baidu.com/s/1NN4k05BWpUw2tHuqjDjY8g)
 
 [ViT-B_16/224 cifar-100](https://pan.baidu.com/s/1XVY62ik2pptQvqspnIxmuA)
 
 and place them under folder```./CP-ViT/output/```.
+Of course you can download other pre-trained models from [Google Cloud](https://console.cloud.google.com/storage/browser/vit_models/imagenet21k?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&prefix=&forceOnObjectsSortingFiltering=false) .
+
 #### Pruning without Finetuning
 We then prune ViT model without finetuning by:
 ```
@@ -43,3 +45,7 @@ python3 train.py \
         --num_steps=10000 \
         --decay_type="cosine" 
 ```
+#### Ackkowledge Related Repos
+Pytorch Image Models: [https://github.com/rwightman/pytorch-image-models](https://github.com/rwightman/pytorch-image-models)
+ViT: [https://github.com/google-research/vision_transformer](https://github.com/google-research/vision_transformer)
+DeiT: [https://github.com/facebookresearch/deit](https://github.com/facebookresearch/deit)
