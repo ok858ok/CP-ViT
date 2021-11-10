@@ -20,6 +20,7 @@ To start with, you can first download pre-trained models from:
 [ViT-B_16/224 cifar-100](https://pan.baidu.com/s/1XVY62ik2pptQvqspnIxmuA)
 
 and place them under folder```./CP-ViT/output/```.
+
 Of course you can download other pre-trained models from [Google Cloud](https://console.cloud.google.com/storage/browser/vit_models/imagenet21k?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&prefix=&forceOnObjectsSortingFiltering=false) .
 
 ### Pruning without Finetuning
