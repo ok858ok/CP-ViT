@@ -13,8 +13,11 @@ CUDA == 11.2
 ```
 #### Pretrained Vision Transformer Models
 To start with, you can first download a pre-trained model from:
+
 [ViT-B_16/224 cifar-10](https://pan.baidu.com/s/1NN4k05BWpUw2tHuqjDjY8g)
+
 [ViT-B_16/224 cifar-100](https://pan.baidu.com/s/1XVY62ik2pptQvqspnIxmuA)
+
 and place them under folder```./CP-ViT/output/```.
 #### Pruning Without Finetuning
 We then prune ViT model without finetuning by:
