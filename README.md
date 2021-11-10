@@ -19,7 +19,7 @@ To start with, you can first download a pre-trained model from:
 [ViT-B_16/224 cifar-100](https://pan.baidu.com/s/1XVY62ik2pptQvqspnIxmuA)
 
 and place them under folder```./CP-ViT/output/```.
-#### Pruning Without Finetuning
+#### Pruning without Finetuning
 We then prune ViT model without finetuning by:
 ```
 python3 eval.py \
@@ -27,5 +27,19 @@ python3 eval.py \
         --dataset="cifar10" \
         --model_type="ViT-B_16" \
         --pretrained_dir='output/cifar10_checkpoint.pth' \
-        --eval_batch_size=64 \
+        --eval_batch_size=64 
+```
+#### Pruning with Finetuning
+We can finetune the CP-ViT model by:
+```
+python3 train.py \
+        --name="CP-ViT finetune" \
+        --dataset="cifar10" \
+        --model_type="ViT-B_16" \
+        --pretrained_dir='output/cifar10_checkpoint.pth' \
+        --train_batch_size=64 \
+        --eval_every=3125 \
+        --learning_rate=3e-2 \
+        --num_steps=10000 \
+        --decay_type="cosine" 
 ```
