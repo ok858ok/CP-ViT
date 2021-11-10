@@ -47,5 +47,7 @@ python3 train.py \
 ```
 #### Ackkowledge Related Repos
 Pytorch Image Models: [https://github.com/rwightman/pytorch-image-models](https://github.com/rwightman/pytorch-image-models)
+
 ViT: [https://github.com/google-research/vision_transformer](https://github.com/google-research/vision_transformer)
+
 DeiT: [https://github.com/facebookresearch/deit](https://github.com/facebookresearch/deit)
