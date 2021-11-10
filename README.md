@@ -9,6 +9,7 @@ We have tested our codes under the following environments:
 ```
 python == 3.9.5
 pytorch == 1.9.0
+torchvision == 0.10.0
 CUDA == 11.2
 ```
 ### Pretrained Vision Transformer Models
